@@ -14,7 +14,7 @@ var mainState = {
 
         game.load.image('bird', 'assets/man.png');
         game.load.image('pipe', 'assets/ball.png');
-        game.load.image('catch', 'assets/catch.png');
+        game.load.image('bedEND', 'assets/bedEND.png');
         game.load.audio('jump', 'assets/tap.mp3');
     },
 
@@ -68,7 +68,7 @@ var mainState = {
         this.gameOverText.alpha = 0;
 
         // 显示man.png图片
-        this.gameOverImage = game.add.sprite(game.width/2, 220, 'bird');
+        this.gameOverImage = game.add.sprite(game.width/2, 220, 'bedEND');
         this.gameOverImage.anchor.set(0.5);
         this.gameOverImage.scale.set(1.5); // 适当放大图片
         this.gameOverImage.alpha = 0;
